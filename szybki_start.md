@@ -36,7 +36,18 @@ Wpisujemy więc `http://loki:3100` i klikamy `Save and Test`.
 ![](img/add-loki.gif)
 
 ## Eksploracja
+Aby zobaczyć co daje nam tak skonfigurowane Loki, wejdźmy w 🧭 -> `Explore`.
 
+Dla środowiska Linuxowego możemy wykonać zapytanie:
+```shell script
+{filename="/var/log/auth.log"} 
+```
+Co dla domyślnych ustawień wyrzuci nam wykres liczebności logów po czasie oraz listę logów. 
+
+Gdy dodamy następujący pipe, możemy wyszukać konkretne słowo w logach:
+```shell script
+{filename="/var/log/auth.log"} |= "root"
+```
 
 ## Instalacja pluginów
 Znajdź interesujący Cię plugin na [bazarku Grafany](https://grafana.com/grafana/plugins):
@@ -67,11 +78,11 @@ Powyższa instrukcja została zainspirowana następującymi źródłami:
 1) ▶️[Getting started with Grafana Loki - under 4 minutes](https://www.youtube.com/watch?v=1obKa6UhlkY)
 2) 📰 [Grafana Loki Intro](https://geekflare.com/grafana-loki-intro/)
 3) 📰 [Open source centralized logging](https://geekflare.com/open-source-centralized-logging/)
-4) 📰 [Another link to verify](https://opensource.com/article/18/9/open-source-log-aggregation-tools)
-5) 📰 [Oficial github](https://github.com/grafana/loki)
-6) 📰 [Dokumentacja Loki](https://grafana.com/docs/loki/latest)
-7) 📰 [How labels works in Loki](https://grafana.com/blog/2020/08/27/the-concise-guide-to-labels-in-loki/)
-
+4) 📰 [Oficial github](https://github.com/grafana/loki)
+5) 📰 [Dokumentacja Loki](https://grafana.com/docs/loki/latest)
+6) 📰 [How labels works in Loki](https://grafana.com/blog/2020/08/27/the-concise-guide-to-labels-in-loki/)
+7) ▶ [Prometheus On Docker Tutorial](https://www.youtube.com/watch?v=tIvHAxs8Fec)
+8) ▶ [Docker Dashboard Using Grafana, Prometheus & Node Exporter](https://www.youtube.com/watch?v=83LWo7h_hvs)
 
 Przydatne linki do Grafany i jej dokumentacji:
 1) [Dokumentacja Grafany](https://grafana.com/docs/grafana/latest/)
