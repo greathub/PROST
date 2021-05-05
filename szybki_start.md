@@ -85,7 +85,7 @@ Powyższa instrukcja została zainspirowana następującymi źródłami:
 8) ▶ [Docker Dashboard Using Grafana, Prometheus & Node Exporter](https://www.youtube.com/watch?v=83LWo7h_hvs)
 
 Przydatne linki do Grafany i jej dokumentacji:
-1) [Dokumentacja Grafany](https://grafana.com/docs/grafana/latest/)
-2) [Bazarek Dashboardów](https://grafana.com/grafana/dashboards)
-3) [Bazarek Pluginów](https://grafana.com/grafana/plugins/)
-3) [Instalacja pluginów](https://grafana.com/docs/grafana/latest/administration/cli/#plugins-commands)
+1) 📰 [Dokumentacja Grafany](https://grafana.com/docs/grafana/latest/)
+2) 📰 [Bazarek Dashboardów](https://grafana.com/grafana/dashboards)
+3) 📰 [Bazarek Pluginów](https://grafana.com/grafana/plugins/)
+3) 📰 [Instalacja pluginów](https://grafana.com/docs/grafana/latest/administration/cli/#plugins-commands)
